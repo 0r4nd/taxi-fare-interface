@@ -183,7 +183,7 @@ const initFlatpickr = () => {
 const predict = () => {
   const form = document.querySelector('form');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', e => {
       e.preventDefault();
       const data = {
         "pickup_latitude": parseFloat(document.getElementById('pickup_latitude').value) || 40.747,
